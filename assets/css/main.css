@@ -665,3 +665,48 @@ Primary use:
   }
   /*---------------------------------------------*/
 }
+
+@media (max-width: 992px) {
+  .size2 {
+    width: 115px;
+    height: 115px;
+  }
+
+  .l2-txt1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .size2 {
+    width: 95px;
+    height: 95px;
+  }
+
+  .l2-txt1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 508px) {
+  .size2 {
+    width: 75px;
+    height: 75px;
+  }
+
+  .l2-txt1 {
+    font-size: 20px;
+  }
+
+  .s2-txt1 {
+    font-size: 10px;
+  }
+
+  .m-r-15 {
+    margin-right: 5px;
+  }
+
+  .m-l-15 {
+    margin-left: 5px;
+  }
+}

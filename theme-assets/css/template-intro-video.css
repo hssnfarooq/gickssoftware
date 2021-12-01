@@ -87,12 +87,12 @@ ul {
 }
 
 .team-flex .team-content {
-  width: 240px;
+  width: 220px;
   margin-bottom: 2.5rem;
 }
 
 .team-flex .team-content > img {
-  width: 100%;
+  width: 75%;
   object-fit: contain;
   overflow: hidden;
   border-radius: 50%;
