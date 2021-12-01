@@ -339,12 +339,12 @@
   height: 110px;
   background-color: #4a0ebb;
   color: #fff;
-  border-radius: 30px;
+  border-radius: 2px;
 }
 
 .progress-container .progress-wrapper > span {
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 17px;
+  line-height: 17px;
   font-weight: 600;
   color: #fff;
 }
@@ -362,18 +362,18 @@
   border-radius: 100px;
   background: #fff;
   color: #ad91c9;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 15px;
   font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 32px;
+  height: 28px;
   width: 0;
 }
 
 .progress-bar-bg {
-  height: 32px;
+  height: 28px;
   width: 350px;
   border-radius: 100px;
   background-color: #ad91c9;
@@ -483,7 +483,7 @@
     height: 95px;
     background-color: #fff;
     color: #000;
-    border-radius: 30px;
+    border-radius: 2px;
   }
 
   .progress-container .progress-wrapper > span {
@@ -500,13 +500,13 @@
   .progress-bar-val {
     background: #1f86ff;
     color: #fff;
-    font-size: 16px;
-    line-height: 16px;
-    height: 28px;
+    font-size: 15px;
+    line-height: 15px;
+    height: 25px;
   }
 
   .progress-bar-bg {
-    height: 28px;
+    height: 25px;
     width: 350px;
     border-radius: 100px;
     background-color: #cfcfcf;
@@ -636,7 +636,7 @@
   .progress-container {
     height: 70px;
     padding: 0 10px;
-    border-radius: 20px;
+    border-radius: 2px;
   }
 
   .progress-container .progress-wrapper > span {
@@ -652,7 +652,7 @@
   }
 
   .progress-bar-val {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 30px;
     height: 25px;
   }
