@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1-rc.2/web3.min.js" integrity="sha512-KURAVUCRxZKDemghhiNqTnYzVPUtO3GYznBZRWRBT2GJJ5PmePAxfO7QMGCM8xUJ0QfrUYJDrtRJM4L4NOtfow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title></title>
+</head>
+<body>
+    <button class="enableEthereumButton btn">Enable Ethereum</button>
+<button class="sendEthButton btn">Send Eth</button>
+   <script>
+       const ethereumButton = document.querySelector('.enableEthereumButton');
+const sendEthButton = document.querySelector('.sendEthButton');
+let accounts = [];
+const weiValue = Web3.utils.toWei('1', 'ether');
+console.log(weiValue);
+//Sending Ethereum to an address
+sendEthButton.addEventListener('click', () => {
+  ethereum
+    .request({
+      method: 'eth_sendTransaction',
+      params: [
+        {
+          from: accounts[0],
+          to: '0x2f318C334780961FB129D2a6c30D0763d9a5C970',
+          value: Web3.utils.toWei('1', 'ether'),
+          gasPrice: '0x09184e72a000',
+          gas: '0x2710',
+        },
+      ],
+    })
+    .then((txHash) => console.log(txHash))
+    .catch((error) => console.error);
+});
+
+ethereumButton.addEventListener('click', () => {
+  getAccount();
+});
+
+async function getAccount() {
+  accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+}
+   </script>
+</body>
+</html>

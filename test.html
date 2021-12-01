@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"   type="application/javascript"></script>
+</head>
+<body>
+  <script> 
+  const provider = new ethers.providers.Web3Provider(window.ethereum)
+  const signer = provider.getSigner()
+
+ signer.sendTransaction({
+    to: "ricmoo.firefly.eth",
+    value: ethers.utils.parseEther("0.000003")
+});
+console.log(ethers.utils.parseEther("")) 
+  </script>
+</body>
+</html>

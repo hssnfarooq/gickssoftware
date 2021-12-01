@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button onclick="addtoken()">test </button>
+    <script>
+        const tokenAddress = '0xd00981105e61274c8a5cd5a88fe7e037d935b513';
+const tokenSymbol = 'TUT';
+const tokenDecimals = 18;
+const tokenImage = 'http://placekitten.com/200/300';
+function addtoken(){
+
+
+try {
+  // wasAdded is a boolean. Like any RPC method, an error may be thrown.
+  const wasAdded = ethereum.request({
+    method: 'wallet_watchAsset',
+    params: {
+      type: 'ERC20', // Initially only supports ERC20, but eventually more!
+      options: {
+        address: tokenAddress, // The address that the token is at.
+        symbol: tokenSymbol, // A ticker symbol or shorthand, up to 5 chars.
+        decimals: tokenDecimals, // The number of decimals in the token
+        image: tokenImage, // A string url of the token logo
+      },
+    },
+  });
+
+  if (wasAdded) {
+    console.log('Thanks for your interest!');
+  } else {
+    console.log('Your loss!');
+  }
+} catch (error) {
+  console.log(error);
+}
+}
+
+    </script>
+</body>
+</html>
