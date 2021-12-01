@@ -134,12 +134,12 @@
 
 @media (max-width: 500px) {
   .modalContent {
-    padding: 30px;
+    padding: 20px;
   }
 
   .modalContent > h2 {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 28px;
   }
   .modalContent p {
     font-size: 12px;
@@ -159,8 +159,8 @@
 
   .modalContent img {
     display: block;
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     margin: 0 auto;
   }
 }
