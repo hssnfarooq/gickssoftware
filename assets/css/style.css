@@ -50,6 +50,10 @@
   opacity: 0;
 }
 
+.roadmap {
+  padding-bottom: 6.5rem;
+}
+
 /* Pop-UP */
 #modalOverlay {
   position: fixed;
@@ -162,6 +166,19 @@
     width: 70px;
     height: 70px;
     margin: 0 auto;
+  }
+
+  .team-flex .team-content > img {
+    width: 65%;
+  }
+
+  .team-flex .team-content {
+    width: 220px;
+    margin-bottom: 0.5rem;
+  }
+
+  .team-flex .team-content p {
+    margin-bottom: 0;
   }
 }
 
@@ -654,6 +671,10 @@
 @media (max-width: 500px) {
   .h1-text-bold {
     font-size: 22px;
+  }
+
+  .button--mimas span {
+    font-size: 15px;
   }
 
   .btn-credit-mbl > a {
