@@ -152,6 +152,13 @@
   .buttonStyle:hover {
     opacity: 1 !important;
   }
+
+  .modalContent img {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+  }
 }
 
 /* Pop-UP-Close */
