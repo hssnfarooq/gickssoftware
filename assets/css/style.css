@@ -46,6 +46,10 @@
   margin: 0 auto;
 }
 
+.fade {
+  opacity: 0;
+}
+
 /* Pop-UP */
 #modalOverlay {
   position: fixed;

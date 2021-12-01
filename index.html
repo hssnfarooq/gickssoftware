@@ -911,7 +911,7 @@
           </section>
 
           <!-- About -->
-          <section class="about section-padding" id="about">
+          <section class="about section-padding fade" id="about">
             <div class="container-fluid">
               <div class="container">
                 <div class="heading text-center">
@@ -990,7 +990,7 @@
           <!-- Problems & Solutions -->
           <section
             id="problem-solution"
-            class="problem-solution section-pro section-padding bg-color"
+            class="problem-solution section-pro section-padding bg-color fade"
           >
             <div class="container-fluid">
               <div class="container">
@@ -1151,7 +1151,7 @@
           <!-- Whitepaper -->
           <section
             id="whitepaper"
-            class="whitepaper section-pro section-padding bg-color"
+            class="whitepaper section-pro section-padding bg-color fade"
           >
             <div class="container-fluid">
               <div class="container">
@@ -1264,7 +1264,7 @@
           <!--/ Whitepaper -->
 
           <!-- Tokens Sale -->
-          <section id="token-sale" class="token-sale section-padding">
+          <section id="token-sale" class="token-sale section-padding fade">
             <div class="container-fluid">
               <div class="container">
                 <div class="heading text-center">
@@ -1454,7 +1454,7 @@
           </section> -->
 
           <!-- Roadmap -->
-          <section id="roadmap" class="roadmap section-padding">
+          <section id="roadmap" class="roadmap section-padding fade">
             <div class="container-fluid">
               <div class="container">
                 <div class="heading text-center">
@@ -1572,7 +1572,7 @@
           <!-- Token Distribution/Stats -->
           <section
             id="token-distribution"
-            class="token-distribution section-pro section-padding bg-color"
+            class="token-distribution section-pro section-padding bg-color fade"
           >
             <div class="container-fluid">
               <div class="container">
@@ -1654,7 +1654,7 @@
           <!-- Token Distribution/Stats -->
           <section
             id="token-distribution"
-            class="token-distribution section-pro section-padding bg-color"
+            class="token-distribution section-pro section-padding bg-color fade"
           >
             <div class="container-fluid">
               <div class="container">
@@ -1998,7 +1998,7 @@
           <!--/ Advisors -->
 
           <!-- Team-Section-Starts -->
-          <section class="team-section">
+          <section class="team-section fade">
             <div class="container">
               <h2
                 class="title animated"
@@ -2048,7 +2048,7 @@
 
           <!-- FAQ -->
 
-          <section id="faq" class="faq section-padding">
+          <section id="faq" class="faq section-padding fade">
             <div class="container-fluid">
               <div class="container">
                 <div class="heading text-center">
@@ -2343,7 +2343,7 @@
     </div>
     <!-- //////////////////////////////////// FOOTER ////////////////////////////////////-->
     <footer
-      class="footer static-bottom footer-light footer-custom-class"
+      class="footer static-bottom footer-light footer-custom-class fade"
       data-midnight="default"
     >
       <div class="container">
@@ -2623,6 +2623,22 @@
 
       var chart = new ApexCharts(document.querySelector('#chart'), options);
       chart.render();
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          $('.fade').each(function (i) {
+            var bottom_of_object =
+              $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_object) {
+              $(this).animate({ opacity: '1' }, 100);
+            }
+          });
+        });
+      });
     </script>
 
     <!-- config/setup -->
