@@ -435,7 +435,7 @@
                           ></a> -->
 
                           <button
-                            onclick="window.location.href='https://buy.stripe.com/aEU16302cf3w2A0004'"
+                            onclick="window.location.href='https://checkout.stripe.com/pay/cs_live_b1DFVyPZGP7nAu6eHPKZRoLsn5Sm5zWFW89JYjgnx6znALKvHpF8tWa8Q9#fidkdWxOYHwnPyd1blppbHNgWjA0TjRDYFRDMTc2dWxUfG9IaT1XVz10bFBVQ3J2dlRyZ29TV2Z8QXAwbFFNZ3FNRHRzbVN9b2Ncc2F9MF08TDVGdD1rQGFNbH9mSXZIZlR9YXJ1SV9xUnY2NTVhX0JTR088VycpJ3VpbGtuQH11anZgYUxhJz8nZ0xcNTVfNkF0MEF1PGpMZkhIJyknd2BjYHd3YHcnPydtcXF1dj8qKmJsZm52amNxcmR3YCtmamgqJ3gl"
                             class="button button--mimas animated"
                             data-animation="fadeInUpShorter"
                             data-animation-delay="1.7s"
@@ -489,7 +489,7 @@
                           data-animation-delay="1.5s"
                         >
                           <button
-                            onclick="window.location.href='https://buy.stripe.com/aEU16302cf3w2A0004'"
+                            onclick="window.location.href='https://checkout.stripe.com/pay/cs_live_b1DFVyPZGP7nAu6eHPKZRoLsn5Sm5zWFW89JYjgnx6znALKvHpF8tWa8Q9#fidkdWxOYHwnPyd1blppbHNgWjA0TjRDYFRDMTc2dWxUfG9IaT1XVz10bFBVQ3J2dlRyZ29TV2Z8QXAwbFFNZ3FNRHRzbVN9b2Ncc2F9MF08TDVGdD1rQGFNbH9mSXZIZlR9YXJ1SV9xUnY2NTVhX0JTR088VycpJ3VpbGtuQH11anZgYUxhJz8nZ0xcNTVfNkF0MEF1PGpMZkhIJyknd2BjYHd3YHcnPydtcXF1dj8qKmJsZm52amNxcmR3YCtmamgqJ3gl"
                             class="button button--mimas animated"
                             data-animation="fadeInUpShorter"
                             data-animation-delay="1.7s"
@@ -1443,7 +1443,7 @@
 
           <!-- Payment-Link -->
 
-          <!-- <section class="iframe-stripe">
+          <section class="iframe-stripe">
             <div class="container">
               <iframe
                 src="https://checkout.stripe.com/pay/cs_live_a1k0OsYoq84uIrzybOvnVD2uYp21muOE5VTj2yjbblD7bL4RfOcUuE9LTC#fidkdWxOYHwnPyd1blppbHNgWjA0TjRDYFRDMTc2dWxUfG9IaT1XVz10bFBVQ3J2dlRyZ29TV2Z8QXAwbFFNZ3FNRHRzbVN9b2Ncc2F9MF08TDVGdD1rQGFNbH9mSXZIZlR9YXJ1SV9xUnY2NTVhX0JTR088VycpJ3VpbGtuQH11anZgYUxhJz8nZ0xcNTVfNkF0MEF1PGpMZkhIJyknd2BjYHd3YHcnPydtcXF1dj8qKmJsZm52amNxcmR3YCtmamgqJ3gl
@@ -1451,7 +1451,7 @@
                 frameborder="0"
               ></iframe>
             </div>
-          </section> -->
+          </section>
 
           <!-- Roadmap -->
           <section id="roadmap" class="roadmap section-padding fade">
@@ -2633,7 +2633,7 @@
               $(this).position().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-            if (bottom_of_window > bottom_of_object) {
+            if (bottom_of_window >= bottom_of_object) {
               $(this).animate({ opacity: '1' }, 100);
             }
           });
