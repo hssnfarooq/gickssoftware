@@ -66,22 +66,6 @@ ul {
 
 /* New CSS Updates */
 
-.challenge-img {
-  width: 100%;
-  max-width: 100%;
-}
-
-.solution-img {
-  width: 100%;
-  max-width: 100%;
-}
-
-.above-stay-img {
-  display: block;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
 /* Team-Section */
 
 .team-section {
@@ -111,10 +95,11 @@ ul {
   width: 100%;
   object-fit: contain;
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: 50%;
 }
 
 .team-flex .team-content h5 {
+  font-size: 16px;
   text-transform: uppercase;
   text-align: center;
   padding-top: 5px;

@@ -30,12 +30,28 @@
   position: relative;
 }
 
+.challenge-img {
+  width: 85%;
+  max-width: 100%;
+}
+
+.solution-img {
+  width: 85%;
+  max-width: 100%;
+}
+
+.above-stay-img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 /* Pop-UP */
 #modalOverlay {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0);
   z-index: 99999;
   height: 100%;
   width: 100%;
@@ -53,39 +69,40 @@
 }
 .modalContent {
   font-family: Comfortaa, Roboto, 'Helvetica Neue', Arial, sans-serif;
-  padding: 15px;
+  padding: 10px;
 }
 
 .modalContent img {
   display: block;
-  width: 140px;
-  height: 140px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto;
 }
 
 .modalContent > h2 {
-  font-size: 42px;
+  font-size: 25px !important;
   font-weight: 700;
   letter-spacing: -1px;
   margin-bottom: 0;
-  padding-top: 5px;
+  padding-top: 2px;
 }
 .modalContent p {
-  font-size: 16px;
+  font-size: 15px;
+  text-align: center;
   line-height: 20px;
   font-weight: 400;
   color: #0f0e0c;
   margin-bottom: 0;
-  padding: 15px 0rem;
+  padding: 8px 0rem;
   letter-spacing: -0.2px;
 }
 .buttonStyle {
   font-family: Comfortaa, Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: inline-block;
-  width: 350px;
+  width: 280px;
   border: 0;
-  font-size: 20px;
-  padding: 12px;
+  font-size: 16px;
+  padding: 7px;
   text-align: center;
   border-radius: 10px;
   background-color: #1f86ff;
@@ -97,6 +114,13 @@
 .buttonStyle:hover {
   opacity: 1 !important;
 }
+
+/* .modal-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+} */
 
 .chart-container {
   display: flex;
@@ -339,7 +363,7 @@
   height: 110px;
   background-color: #4a0ebb;
   color: #fff;
-  border-radius: 2px;
+  border-radius: 8px;
 }
 
 .progress-container .progress-wrapper > span {
@@ -522,6 +546,16 @@
 }
 
 @media (max-width: 768px) {
+  .challenge-img,
+  .solution-img,
+  .above-stay-img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 80%;
+  }
+
   .doc {
     padding: 40px 0px;
   }
@@ -636,7 +670,7 @@
   .progress-container {
     height: 70px;
     padding: 0 10px;
-    border-radius: 2px;
+    border-radius: 8px;
   }
 
   .progress-container .progress-wrapper > span {
@@ -653,12 +687,12 @@
 
   .progress-bar-val {
     font-size: 12px;
-    line-height: 30px;
-    height: 25px;
+    line-height: 24px;
+    height: 24px;
   }
 
   .progress-bar-bg {
-    height: 25px;
+    height: 24px;
   }
 
   .head-area .head-content h1 {
